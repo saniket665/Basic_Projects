@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container" id="main-container">
+        <button class="btn login-btn" id="login-btn">Login</button>
+    </div>
+    <div class="modal animate" id="modal">
+        <div class="modal-content">
+            <div class="img-container">
+                <span id="close-btn" class="close-btn"><i class="fa-solid fa-xmark"></i></span>
+                <img src="blank-profile.jpg" alt="">
+            </div>
+            <form class="form-content" id="form">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" name="uname" placeholder="Enter Username" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <label class="checkbox-label"><input type="checkbox" name="remember" id="remember-checkbox" checked="checked"> Remember Me</label>
+                <button class="btn submit-btn" type="submit">Login</button>
+                <div class="forgot-password">
+                    <a href="#">Forgot_Password</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

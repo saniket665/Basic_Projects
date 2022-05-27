@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    min-height: 100vh;
+    background-color: #e8e8e8;
+}
+.main-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.btn {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: none;
+    background: #0c20ec;
+    color: white;
+    font-family: 'Roboto';
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+.modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.modal-content {
+    border-radius: 5px;
+    width: 50%;
+    background: white;
+    padding-top: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.img-container {
+    text-align: center;
+}
+.close-btn {
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+}
+.close-btn:hover {
+    color: #c52323;
+}
+.img-container img {
+    width: 26%;
+    border-radius: 50%;
+}
+.form-content {
+    padding: 1rem;
+}
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px 8px;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+input[type="checkbox"] {
+    margin: 0.5rem 0;
+    margin-left: 2px;
+}
+.submit-btn {
+    font-size: 1.1rem;
+    padding: 8px 12px;
+    width: 100%;
+    margin: 8px 0;
+    font-family: 'Roboto';
+}
+.forgot-password {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+.show {
+    display: block;
+}
+.animate {
+    animation: open 0.6s;
+}
+@keyframes open {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+@media screen and (max-width: 560px) {
+    .modal-content {
+        width: 85%;
+    }
+    .img-container img {
+        width: 30%;
+    }
+}
